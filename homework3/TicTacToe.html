@@ -1,0 +1,187 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="A3StyleRef.css">
+	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//The value 0 is used for O's turn and the value 1 is used for X's turn.
+			var turn = 0;
+			var player1grid = newArray();
+			var player2grid = newArray();
+			var wins = newArray(15, 75, 130, 80, 95, 70, 55);
+
+			//click event for clicking on any cell
+			$("#cellA")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[0] = 0;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[0] = 0;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellB")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[1] = 5;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[1] = 5;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellC")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[2] = 10;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[2] = 10;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellD")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[3] = 20;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[3] = 20;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellE")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[4] = 25;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[4] = 25;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellF")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[5] = 30;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[5] = 30;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellG ")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[6] = 35;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[6] = 35;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellH")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[7] = 40;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[7] = 40;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+				$("#cellI")  
+				.click(
+					function(){
+						var cell = $(this); //Get the cell
+						
+						if(turn==0){
+							player1grid[8] = 55;
+							turn = 1;
+							cell.css("background","url(images/X.png)")}
+						else{
+							turn = 0;
+							player2grid[8] = 55;
+							cell.css("background","url(images/O.png)")}
+					}
+				);
+		});
+	</script>
+</head>
+<body>
+	<div class="pageHeader">
+		<h1>TicTacToe Game</h1>
+		<p>A TicTacToe game that doesn't work...
+		</p>
+	</div>
+	<table class="gameboard" id="gameboard">
+		<tr class="row1" id="row1">
+			<td class="cellA" id="cellA"></td>
+			<td class="cellB" id="cellB"></td>
+			<td class="cellC" id="cellC"></td>
+		</tr>
+		<tr class="row2" id="row2">
+			<td class="cellD"id="cellD"></td>
+			<td class="cellE"id="cellE"></td>
+			<td class="cellF"id="cellF"></td>
+		</tr>
+		<tr class="row3" id="row3">
+			<td class="cellG" id="cellG"></td>
+			<td class="cellH" id="cellH"></td>
+			<td class="cellI" id="cellI"></td>
+		</tr>
+	</table>
+
+	<div class="linkSection">
+		<h3>Go To:</h3><br>
+		<ul>
+			<li><a href="Welcome.html">Welcome Page</a></li>
+			<li><a href="TicTacToe.html">TicTacToe Game</a></li>
+			<li><a href="RegistrationForm.html">Registration Form</a></li>
+			<li><a href="FAQ.html">FAQ</a></li>
+			<li><a href="ContactUs.html">Contact Us</a></li>
+		</ul>
+	</div>
+</body>
+</html>

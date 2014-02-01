@@ -1,0 +1,66 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="A3StyleRef.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://cdn.wideskyhosting.com/js/jquery.validate.js"></script>
+	<script>
+		$( document ).ready(function() {
+			$("#registrationForm").validate()
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="pageHeader">
+		<h1>Registration Form</h1>
+		<p>Please fill out the form to submit your registration! This form uses jQuery plug-ins.
+		</p>
+	</div>
+
+	<div class="midSection">
+		<p> Fill out each field and then hit submit.
+		</p><br>
+
+		<form id="registrationForm">
+			<table class="fillOutTable">
+				<tr>
+					<td>Name:</td>
+					<td><input id="name" type="text" name="name" class="required"></td>
+				</tr>
+				<tr>
+					<td>Age:</td>
+					<td><input id="age" type="text" name="age" class="required"></td>
+				</tr>
+				<tr>
+					<td>Hair Color:</td>
+					<td><input id="haircolor" type="text" name="haircolor" class="required"></td>
+				</tr>
+				<tr>
+					<td>Occupation:</td>
+					<td><input id="occupation" type="text" name="occupation" class="required"></td>
+				</tr>
+				<tr>
+					<td>Favorite Color:</td>
+					<td><input id="favoritecolor" type="text" name="favoritecolor" class="required"></td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<div class="linkSection">
+		<h3>Go To:</h3><br>
+		<ul>
+			<li><a href="Welcome.html">Welcome Page</a></li>
+			<li><a href="TicTacToe.html">TicTacToe Game</a></li>
+			<li><a href="RegistrationForm.html">Registration Form</a></li>
+			<li><a href="FAQ.html">FAQ</a></li>
+			<li><a href="ContactUs.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+body{
+	background-color: #C8C8C8;
+	font-family: verdana;
+}
+
+h1{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 20px;
+}
+
+.pageHeader{
+	background-color: #009999;
+	font-size: 12px;
+	margin: 15px;
+	padding: 5px;
+	border-radius:1em;
+	text-align: center;
+}
+
+.midSection{
+	background-color: #009999;
+	font-size: 12px;
+	margin: 15px;
+	padding: 5px;
+	border-radius:1em;
+	text-align: left;
+}
+
+.linkSection{
+	background-color: #009999;
+	font-size: 12px;
+	margin: 15px;
+	padding: 5px;
+	border-radius:1em;
+}
+
+.fillOutTable{
+	font-size: 12px;
+	text-align: left;
+}
+
+.dataTable{
+	background-color: white;
+	border-radius: 1em;
+	padding: 15px;
+	border: 2px solid black;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 12px;
+	font-family: verdana;
+}
+
+.cellA, .cellB, .cellD, .cellE{
+	width: 100px;
+	height: 100px;
+	border-style: none solid solid none;
+	border-width: 4px;
+	border-color: purple;
+}
+
+.cellC, .cellF{
+	width: 100px;
+	height: 100px;
+	border-style: none none solid none;
+	border-width: 4px;
+	border-color: purple;
+}
+
+.cellG, .cellH{
+	width: 100px;
+	height: 100px;
+	border-style: none solid none none;
+	border-width: 4px;
+	border-color: purple;
+}
