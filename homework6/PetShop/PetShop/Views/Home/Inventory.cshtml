@@ -6,9 +6,9 @@
 
 <h2>Inventory</h2>
 
-<p>Inventory list for customers.</p>
-
 <p>
+    Inventory Page for customers.
+
     <table class="table">
         <tr>
             <th>
@@ -19,7 +19,22 @@
             </th>
             <th></th>
         </tr>
-     </table>
-</p>
 
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</p>
 
