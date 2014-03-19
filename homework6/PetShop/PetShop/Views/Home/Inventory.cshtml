@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PetShop.Models.Pet>
+
+@{
+    ViewBag.Title = "Inventory";
+}
+
+<h2>Inventory</h2>
+
+<p>Inventory list for customers.</p>
+
+<p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+     </table>
+</p>
+
+
